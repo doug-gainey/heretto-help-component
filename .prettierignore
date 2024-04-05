@@ -1,0 +1,5 @@
+build
+node_modules
+
+# Prettier has some css formatting issues
+**/*.less

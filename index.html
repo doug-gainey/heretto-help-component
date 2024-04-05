@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Heretto Help</title>
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" />
+    <link rel="stylesheet" href="index.less" />
+    <script type="module" src="src/main.js"></script>
+    <script type="module">
+      import HerettoHelp from './src/HerettoHelp.js';
+
+      HerettoHelp.init({
+        apiUrl: import.meta.env.VITE_HERETTO_API_URL,
+        apiOrgId: import.meta.env.VITE_HERETTO_API_ORG_ID,
+        apiDeployId: import.meta.env.VITE_HERETTO_API_DEPLOY_ID,
+        apiToken: import.meta.env.VITE_HERETTO_API_TOKEN,
+        portalUrl: import.meta.env.VITE_HERETTO_PORTAL_URL,
+        otherUrls: [
+          {
+            text: 'Foo Link',
+            href: 'http://foo.com/'
+          },
+          {
+            text: 'Bar Link',
+            href: 'http://bar.com/',
+            target: '_blank'
+          }
+        ]
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('launch-heretto-help').addEventListener('click', () => {
+          document.querySelector('heretto-help').dispatchEvent(
+            new CustomEvent('toggle', {
+              detail: {resourceId: 'Home.Tasks'}
+            })
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Heretto Help</h1>
+    <h3>
+      <a id="launch-heretto-help" href="javascript:void(0);">Launch</a>
+    </h3>
+    <heretto-help></heretto-help>
+  </body>
+</html>
