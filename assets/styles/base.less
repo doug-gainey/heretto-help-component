@@ -1,0 +1,44 @@
+@import 'variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  text-size-adjust: none;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  //noinspection CssInvalidPropertyValue
+  text-wrap: balance;
+}
+
+img, picture, object, iframe {
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a, input, textarea, .btn {
+  transition: box-shadow .2s ease;
+}
+
+a:focus, input:focus, textarea:focus, .btn:focus {
+  outline: none;
+}
+
+a:focus-visible, input:focus, textarea:focus, .btn:focus {
+  box-shadow: 0 0 0 2px @brandColor;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@gainedm/heretto-help-component",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/lib/main.js",
+  "module": "./dist/lib/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lib/main.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gainedm/heretto-help-component.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "lint": "npx eslint *.js src/**/*.js --fix && npx stylelint *.less assets/**/*.less --fix && npx prettier . --write",
+    "lint-ci": "npx eslint *.js src/**/*.js && npx stylelint *.less assets/**/*.less && npx prettier . --check",
+    "test": "web-test-runner",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^3.0.0-next.5",
+    "@remcovaes/web-test-runner-vite-plugin": "^1.2.1",
+    "@web/test-runner": "^0.18.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "less": "^4.2.0",
+    "prettier": "3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-less": "^3.0.1",
+    "vite": "^5.1.4"
+  },
+  "browserslist": [
+    "> 0.2%, not dead"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

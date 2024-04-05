@@ -1,0 +1,4 @@
+# This empty file prevents the dist folder from being excluded from the published package.
+# From npm documentation:
+#   If there's no .npmignore file, but there is a .gitignore file, then npm will ignore the stuff matched by the .gitignore file.
+#   If you want to include something that is excluded by your .gitignore file, you can create an empty .npmignore file to override it.
