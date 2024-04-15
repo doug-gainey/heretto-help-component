@@ -7,7 +7,7 @@ This is a component that makes calls to Heretto's api to provide in-product help
 ### Install the package
 
 ```shell
-npm install @gainedm/heretto-help-component
+npm install @doug-gainey/heretto-help-component
 ```
 
 ### Add the component to your project's HTML

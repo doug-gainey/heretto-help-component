@@ -1,5 +1,5 @@
 {
-  "name": "@gainedm/heretto-help-component",
+  "name": "@doug-gainey/heretto-help-component",
   "version": "1.0.0",
   "files": [
     "dist"
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gainedm/heretto-help-component.git"
+    "url": "git+https://github.com/doug-gainey/heretto-help-component.git"
   },
   "scripts": {
     "dev": "vite",

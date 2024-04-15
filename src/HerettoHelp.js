@@ -1,4 +1,4 @@
-// Copyright (c) 2024, gainedm
+// Copyright (c) 2024, Doug Gainey
 // All rights reserved.
 // This source code is licensed under the BSD-style license found in the
 // LICENSE file in the root directory of this source tree.
@@ -101,7 +101,7 @@ export default class HerettoHelp extends BaseElement {
           </section>
         </main>
         <footer class="footer">
-            <p>Copyright &copy; 2024, <a href="https://github.com/gainedm">gainedm</a>.</p>
+            <p>Copyright &copy; 2024, <a href="https://github.com/doug-gainey">Doug Gainey</a>.</p>
         </footer>
       </div>`;
 
