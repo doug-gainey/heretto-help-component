@@ -26,14 +26,14 @@
   "devDependencies": {
     "@open-wc/testing": "^3.0.0-next.5",
     "@remcovaes/web-test-runner-vite-plugin": "^1.2.1",
-    "@web/test-runner": "^0.18.1",
+    "@web/test-runner": "^0.20.2",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "less": "^4.2.0",
     "prettier": "3.2.5",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-less": "^3.0.1",
-    "vite": "^5.1.4"
+    "vite": "^7.3.1"
   },
   "browserslist": [
     "> 0.2%, not dead"
